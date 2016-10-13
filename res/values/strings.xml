@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <!-- ===============APP名称=============== -->
+    <string name="app_name">红包辅助工具</string>
+    <!-- ===============END=============== -->
+    
+    
+    <!-- ===============服务描述=============== -->
+    <string name="desc">自动抢红包服务</string>
+    <!-- =================END================= -->
+    
+    
+    <!-- ================组件上的文字================ -->
+    
+    <!-- 运行状态 -->
+    <string name="is_run">正在运行&#8230;</string>
+    <string name="is_close">服务已关闭</string>
+    
+    <!-- 红包记录 -->
+    <string name="red_envelop_count">红包记录</string>
+    
+    <!-- 详细记录按钮上的文本 -->
+    <string name="open_service">开启自动抢红包</string>
+    <string name="close_service">关闭自动抢红包</string>
+    
+    <!-- 详细记录按钮上的文本 -->
+    <string name="record">红包记录</string>
+    
+    <!-- 更多设置按钮上的文本 -->
+    <string name="setting">设置</string>
+    
+    <!-- 使用教程按钮上的文本 -->
+    <string name="guid">使用说明</string>
+    
+    <string name="setting_bar_back_button">&#60;返回</string>
+    
+    <string name="setting_bar_title">偏好设置</string>
+    
+    <string name="listen_setting_first_item">监视设置</string>
+    
+    <string name="red_envelop_num">共0个</string>
+    
+    <!-- =================END================= -->
+    
+    
+    <!-- ===============监听的包名=============== -->
+    
+    <!-- QQ包名：com.tencent.mobileqq  -->
+    <!-- 微信包名：com.tencent.mm -->
+    <string name="listener_package_names">com.tencent.mobileqq,com.tencent.mm</string>
+    <string name="QQ_package_names">com.tencent.mobileqq</string>
+    <string name="mm_package_names">com.tencent.mm</string>
+    
+    <!-- =================END================= -->
+    
+    <!-- ===============本应用程序的包名和各activity名=============== -->
+    
+    <string name="setting_activity">com.example.grabredenvelopetools.settingActivity</string>
+    
+    <!-- =========================END========================= -->
+    
+    
+    <!-- =================所监听的窗口activity名================= -->
+    
+    <!-- QQ聊天界面 -->
+    <string name="qq_chat_ui">com.tencent.mobileqq.activity.SplashActivity</string>
+    
+    <!-- QQ拆开红包的界面  -->
+    <string name="qq_red_envelope_ui">cooperation.qwallet.plugin.QWalletPluginProxyActivity</string>
+    
+    <!-- 微信聊天界面 -->
+    <string name="mm_chat_ui">com.tencent.mm.ui.LauncherUI</string>
+    
+    <!-- 微信拆红包界面 -->
+    <string name="mm_get_red_envelop_ui">com.tencent.mm.plugin.luckymoney.ui.LuckyMoneyReceiveUI</string>        
+    
+    <!-- 微信红包详情界面 -->
+    <string name="red_envelop_detail_ui">com.tencent.mm.plugin.luckymoney.ui.LuckyMoneyDetailUI</string>
+    
+    <!-- ========================END======================== -->
+    
+    
+    <!-- ==================提示文本================== -->
+    <string name="open_service_activity_tip">找到自动抢红包工具，然后开启服务即可</string>
+    <!-- ===================END==================== -->
+    
+    
+    <!-- ================= 应用设置的键名================= -->
+    
+    <!-- 抢微信红包的设置键名 -->
+    <string name="grabmmRedEnvelop">grabmmRedEnvelop</string>
+    
+    <!-- 抢QQ红包的设置键名 -->
+    <string name="grabQQRedEnvelop">grabQQRedEnvelop</string>
+    <string name="grabQQpasswdEnvelop">grabQQpasswdEnvelop</string>
+    								   
+    <!-- ===================END==================== -->
+    
+    <!-- 权限名 -->
+    <string name="permission_name">android.permission.BIND_ACCESSIBILITY_SERVICE</string>
+    <!--  -->
+
+	<!-- UpdataRecordBroadcast的action值 -->
+	<string name="record_state_receiver">com.example.grabredenvelopetools.RedEnvelopeMainActivity.UpdataRecordBroadcast</string>
+    
+</resources>

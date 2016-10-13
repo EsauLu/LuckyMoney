@@ -1,0 +1,127 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+    
+    <RelativeLayout 
+        android:id="@+id/main_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/red0">
+        
+        <TextView 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/bar_font_color"
+            android:textSize="22sp"
+            android:text="@string/app_name"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+        
+        <TextView 
+            android:id="@+id/setting_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/bar_font_color"
+            android:textSize="22sp"
+            android:text="@string/setting"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:onClick="settingButton"
+            android:clickable="true"
+            />
+        
+    </RelativeLayout>
+    
+    <LinearLayout 
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/main_bar"
+        android:background="@color/red0"
+        android:gravity="center"
+		android:paddingTop="20dp"
+		android:paddingBottom="20dp"
+        >
+        
+        <Button 
+            android:id="@+id/GrabRedEnvelopState_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/open_service"
+            android:onClick="serviceButtonOnClick"/>
+        
+        <TextView 
+        	android:id="@+id/runing_state_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/bar_font_color"
+            android:textSize="16sp"
+            android:text="@string/is_close"
+            android:layout_marginTop="20dp"
+            />
+        
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/record"
+        android:layout_below="@id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+        <RelativeLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+			android:background="@color/red2"
+            android:paddingTop="10sp"
+            android:paddingBottom="10sp"
+            android:paddingLeft="10sp"
+            android:paddingRight="10sp"
+            android:gravity="center">
+        
+        	<TextView 
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:text="@string/record"
+            	android:textColor="@color/bar_font_color"
+            	android:textSize="20sp"/>
+        	
+        	<TextView 
+        	    android:id="@+id/sum"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:text="@string/red_envelop_num"
+            	android:textColor="@color/bar_font_color"
+            	android:layout_alignParentRight="true"
+            	android:textSize="20sp"/>
+        
+        </RelativeLayout>
+        
+    </LinearLayout>
+        
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/record"
+        >
+        
+        
+    
+    	<ListView
+	    	android:id="@+id/redEnvelopRecord_tv"
+        	android:layout_width="match_parent"
+    		android:layout_height="wrap_content"
+        	android:gravity="center"
+        	android:text="@string/red_envelop_count"
+        	/>
+            
+    </RelativeLayout>
+
+</RelativeLayout>

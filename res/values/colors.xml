@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <color name="red">#060</color>
+    <color name="black">#DDBC84</color>
+    <color name="activiti_background">#FAF6F1</color>
+    <color name="bar_background">#D95449</color>
+    <color name="bar_font_color">#fde1b5</color>
+    <color name="item_title_font_color">#DA6C5E</color>
+    <color name="button_color">#DDBC84</color>
+    <color name="setting_fist_item_color">#d55849</color>
+    <color name="setting_item_font_color">#ff3333</color>
+    <color name="summary_color">#646464</color>
+    <color name="red0">#D13D4B</color>
+    <color name="red1">#C43846</color>
+    <color name="red2">#B83341</color>
+</resources>

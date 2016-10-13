@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PreferenceScreen 
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:context=".SettingsActivity"
+    >
+    
+	<Preference 
+	    android:layout="@layout/setting_bar_layout">
+	</Preference>
+	
+	<PreferenceCategory
+	    android:title="监视设置"
+	    android:layout="@layout/setting_first_item_layout">
+	    
+	    <CheckBoxPreference
+	        android:key="@string/grabmmRedEnvelop"
+	        android:title="监视微信红包"
+	        android:summary="选中此项将会监视通知栏和微信聊天界面"
+	        android:defaultValue="true"
+	        android:layout="@layout/setting_item_layout"/>
+	        
+        <CheckBoxPreference
+            android:key="@string/grabQQRedEnvelop"
+            android:title="监视QQ红包"
+            android:summary="选中此项将会监视通知栏和QQ聊天界面"
+            android:layout="@layout/setting_item_layout"
+            android:defaultValue="true"/>
+        
+	    <CheckBoxPreference 
+	        android:key="@string/grabQQpasswdEnvelop"
+	        android:title="监视QQ口令红包"
+	        android:summary="开启此项需要开启监视QQ红包项"
+            android:layout="@layout/setting_item_layout"
+            android:defaultValue="false"/>
+	    
+	</PreferenceCategory>
+	
+	<PreferenceCategory 
+	    android:title="其他设置"
+	    android:layout="@layout/setting_first_item_layout">
+	    <Preference 
+	        android:key="accessibility_setting"
+	        android:title="辅助设置"
+	        android:summary="打开系统辅助功能设置"
+	        android:layout="@layout/setting_item_layout"
+	        />
+	    <Preference 
+	        android:key="teach"
+	        android:title="使用说明"
+	        android:summary="详细的使用教程"
+	        android:layout="@layout/setting_item_layout"
+	        />
+	    <Preference 
+	        android:key="about_author"
+	        android:title="关于"
+	        android:summary="作者：EsauLu\n版本号：v1.0"
+	        android:layout="@layout/setting_item_layout"
+	        />
+	</PreferenceCategory>
+	
+	
+    
+</PreferenceScreen>

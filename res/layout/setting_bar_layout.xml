@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout
+    android:layout_width="match_parent" xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:background="@color/bar_background">
+    
+    <TextView 
+        
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="@string/setting_bar_title"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:textColor="@color/bar_font_color"
+        android:background="@color/bar_background"
+        android:clickable="true"
+        android:onClick="Back"/>
+    
+    <TextView 
+        
+        android:layout_width="80sp"
+        android:layout_height="60dp"
+        android:text="@string/setting_bar_back_button"
+        android:id="@+id/setting_back_btn"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:textColor="@color/bar_font_color"
+        android:background="@color/bar_background"/>
+    
+</RelativeLayout>
